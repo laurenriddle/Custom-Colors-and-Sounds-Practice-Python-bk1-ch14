@@ -1,6 +1,8 @@
 from Zero import Zero
 from Tesla import Tesla
 from Cessna import Cessna
+from Jeep import Jeep
+from Versa import Versa
 '''
     1. Define 5 of your favorite vehicles
     2. Move all common properties in your vehicles to a new Vehicle class.
@@ -12,11 +14,27 @@ from Cessna import Cessna
     8. Override all three of those methods on some of the vehicles. For example, the stop() method for a plane would be to output the message "The white Cessna rolls to a stop after rolling a mile down the runway."
     9. Make your vehicle instances perform all three behaviors.
 '''
-fxs = Zero()
+
+fxs = Zero("black", "9")
 modelS = Tesla()
 mx410 = Cessna()
+V2012 = Versa()
+jeep = Jeep()
+
 
 fxs.drive()
 modelS.drive()
 mx410.drive()
+V2012.drive()
+jeep.drive()
 
+fxs.battery_kwh = 9
+fxs.main_color = "Black"
+fxs.maximum_occupancy = 20
+modelS.battery_kwh = 9
+mx410.battery_kwh = 9
+V2012.battery_kwh = 9
+jeep.battery_kwh = 9
+
+
+print("hello", fxs.main_color)

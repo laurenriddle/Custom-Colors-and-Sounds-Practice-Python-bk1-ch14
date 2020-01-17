@@ -16,11 +16,27 @@ from Versa import Versa
 '''
 
 fxs = Zero("black", "9")
-modelS = Tesla()
-mx410 = Cessna()
-V2012 = Versa()
-jeep = Jeep()
+modelS = Tesla("black", "9")
+mx410 = Cessna("black", "9")
+V2012 = Versa("black", "9")
+jeep = Jeep("black", "9")
 
+
+fxs.battery_kwh = 9
+fxs.main_color = "Black"
+fxs.maximum_occupancy = 20
+modelS.battery_kwh = 9
+modelS.main_color = "Purple"
+modelS.maximum_occupancy = 2
+mx410.battery_kwh = 9
+mx410.main_color = "Blue"
+mx410.maximum_occupancy = 4
+V2012.battery_kwh = 9
+V2012.main_color = "Yellow"
+V2012.maximum_occupancy = 5
+jeep.battery_kwh = 9
+jeep.main_color = "Red"
+jeep.maximum_occupancy = 6
 
 fxs.drive()
 modelS.drive()
@@ -28,13 +44,17 @@ mx410.drive()
 V2012.drive()
 jeep.drive()
 
-fxs.battery_kwh = 9
-fxs.main_color = "Black"
-fxs.maximum_occupancy = 20
-modelS.battery_kwh = 9
-mx410.battery_kwh = 9
-V2012.battery_kwh = 9
-jeep.battery_kwh = 9
+fxs.turn("Right")
+modelS.turn("Left")
+mx410.turn("Right")
+V2012.turn("Left")
+jeep.turn("Right")
+
+fxs.stop()
+modelS.stop()
+mx410.stop()
+V2012.stop()
+jeep.stop()
 
 
-print("hello", fxs.main_color)
+

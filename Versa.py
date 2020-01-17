@@ -6,4 +6,4 @@ class Versa(Vehicle):
         super().__init__(main_color, maximum_occupancy)
         self.battery_kwh = 0
     def drive(self):
-        print("Zoooooooooooom!")
+        print(f"The {self.main_color} Versa drives past.")
